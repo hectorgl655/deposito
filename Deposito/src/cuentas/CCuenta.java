@@ -1,12 +1,12 @@
 package cuentas;
 
-/*
+/**
  * Clase la cual gestiona un objeto cuenta la cual cuenta con diferentes atributos y métodos.
  * 
  */
 public class CCuenta {
 
-	/*
+	/**
 	 * Atributos de la clase cuenta.
 	 * @param nombre, El nombre del titular de la cuenta.
 	 * @param cuenta, El numero de cuenta.
@@ -18,11 +18,14 @@ public class CCuenta {
     private double saldo;
     private double tipoInterés;
 
+    /**
+     * Constructor de la cuenta vacío.
+     */
     public CCuenta()
     {
     }
     
-    /*
+    /**
      * Constructor del objeto cuenta.
      * @param nom, parametro String que se pide al crear cuenta, es el nombre del propietario de la cuenta.
      * @param cue, parametro String que se pide al crear cuenta, es el numero de la cuenta.
@@ -36,7 +39,10 @@ public class CCuenta {
     }
     
     
-    // Getters y Setters de todas las variables.
+    /**
+     *  Getters y Setters de todas las variables.
+     * 
+     */
     public String getNombre() {
 		return nombre;
 	}
@@ -62,7 +68,7 @@ public class CCuenta {
 		this.tipoInterés = tipoInterés;
 	}
 	
-	/*
+	/**
 	 * Método que devuelve un double que es la cantidad de dinero disponible en la cuenta.
 	 * @param estado
 	 * @return saldo
@@ -72,7 +78,7 @@ public class CCuenta {
         return saldo;
     }
 
-	/*
+	/**
 	 * Metodo para ingresar dinero en la cuenta.
 	 * @param cantidad, cantidad de dinero que se desea ingresar en la cuenta.
 	 * @throws Exception, si la cantidad de dinero es negativa.
@@ -84,7 +90,7 @@ public class CCuenta {
         this.saldo = this.saldo + cantidad;
     }
 
-    /*
+    /**
      * Método para retirar dinero de la cuenta.
      * @param cantidad, cantidad de dinero que se quiere retirar.
      * @throws Exception, puede haber dos excepciones, si la cantidad a retirar es negativa o si el saldo es inferior a la cantidad que 
